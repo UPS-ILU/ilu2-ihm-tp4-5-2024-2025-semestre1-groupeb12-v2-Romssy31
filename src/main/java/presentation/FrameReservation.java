@@ -278,10 +278,11 @@ public class FrameReservation extends javax.swing.JFrame {
         tableLabel.setEnabled(false);
         tablePicker.setEnabled(false);
         tablesImage.setEnabled(false);
+        hourPicker.setEnabled(false);
         numLabel.setEnabled(false);
         numPicker.setEnabled(false);
         hourLabel.setEnabled(false);
-        hourPicker.setEnabled(false);
+        
     }    
  
     private void validButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_validButtonActionPerformed
