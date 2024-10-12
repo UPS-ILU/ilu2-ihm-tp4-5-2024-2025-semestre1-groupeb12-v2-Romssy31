@@ -1,9 +1,5 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package dialog;
 
+<<<<<<< HEAD
 import interface_noyau_fonctionnel.InterfaceNoyauFonctionnel;
 import java.awt.EventQueue;
 import java.time.LocalDate;
@@ -61,3 +57,5 @@ public class DialogReservation {
     }
 
 }
+=======
+>>>>>>> 6b6b39a328fc442a362adb47ae56c09a68bc2c59
