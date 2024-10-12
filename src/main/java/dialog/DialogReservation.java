@@ -7,7 +7,6 @@ package dialog;
 import interface_noyau_fonctionnel.InterfaceNoyauFonctionnel;
 import java.awt.EventQueue;
 import java.time.LocalDate;
-import javax.swing.JOptionPane;
 import presentation.FrameReservation;
 
 public class DialogReservation {
@@ -26,7 +25,7 @@ public class DialogReservation {
         frameReservation.setVisible(true);
     }
 
-   public void handleDateSelectedEvent(LocalDate date) {
+    public void handleDateSelectedEvent(LocalDate date) {
         frameReservation.enableHourPicker();
     }
 
@@ -35,24 +34,23 @@ public class DialogReservation {
     }
 
     public void handleNumOfPersonsSelectedEvent(int nbPersons) {
-        frameReservation.enableTablePicker();
+        //TODO
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public void handleTableSelectedEvent(int numTable) {
-        frameReservation.enableValidationButton();
+        //TODO
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public void handleCancelEvent() {
-        frameReservation.cancelAll();
+        //TODO
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public void handleValidationEvent() {
-        LocalDate date = frameReservation.getDate();
-        String heure = frameReservation.getHour();
-        int nombre = frameReservation.getNumPersons();
-        String table = frameReservation.getTable();
-        String confirmation = "Réservation validée pour le " + date + " à " + heure + " pour " + nombre + " personnes à la " + table + ".";
-        JOptionPane.showMessageDialog(null,confirmation,"Confirmation de réservation",JOptionPane.INFORMATION_MESSAGE);
+        //TODO
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public static void main(String[] args) {
