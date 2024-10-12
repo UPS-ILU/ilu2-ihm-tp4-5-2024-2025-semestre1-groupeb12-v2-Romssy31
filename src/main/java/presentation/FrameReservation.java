@@ -269,6 +269,14 @@ public class FrameReservation extends javax.swing.JFrame {
     public void enableValidationButton() {
         validButton.setEnabled(true);
     }
+    
+    public void updateTablePicker(String[] tablesDisponibles) {
+    // Si vous utilisez un JList, mettez à jour son modèle
+    tablePicker.setListData(tablesDisponibles);  // setListData fonctionne pour JList
+    }
+    
+    
+
 
     public void cancelAll() {
         datePicker.clear();
