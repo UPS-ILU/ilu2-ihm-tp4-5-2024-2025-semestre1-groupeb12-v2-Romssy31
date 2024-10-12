@@ -7,6 +7,7 @@ package dialog;
 import interface_noyau_fonctionnel.InterfaceNoyauFonctionnel;
 import java.awt.EventQueue;
 import java.time.LocalDate;
+import javax.swing.JOptionPane;
 import presentation.FrameReservation;
 
 public class DialogReservation {
@@ -25,34 +26,33 @@ public class DialogReservation {
         frameReservation.setVisible(true);
     }
 
-    public void handleDateSelectedEvent(LocalDate date) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+   public void handleDateSelectedEvent(LocalDate date) {
+        frameReservation.enableHourPicker();
     }
 
     public void handleTimeSelectedEvent(String time) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.enableNumPersonsPicker();
     }
 
     public void handleNumOfPersonsSelectedEvent(int nbPersons) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.enableTablePicker();
     }
 
     public void handleTableSelectedEvent(int numTable) {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.enableValidationButton();
     }
 
     public void handleCancelEvent() {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        frameReservation.cancelAll();
     }
 
     public void handleValidationEvent() {
-        //TODO
-        throw new UnsupportedOperationException("Not implemented yet");
+        LocalDate date = frameReservation.getDate();
+        String heure = frameReservation.getHour();
+        int nombre = frameReservation.getNumPersons();
+        String table = frameReservation.getTable();
+        String confirmation = "Réservation validée pour le " + date + " à " + heure + " pour " + nombre + " personnes à la " + table + ".";
+        JOptionPane.showMessageDialog(null,confirmation,"Confirmation de réservation",JOptionPane.INFORMATION_MESSAGE);
     }
 
     public static void main(String[] args) {
